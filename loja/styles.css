@@ -1,0 +1,43 @@
+article {
+  display: flex;
+  flex-direction: column;
+  border-radius: 4px;
+}
+
+footer {
+  background-color: #EEE;
+  margin-top: 1em;
+  max-width: 725px;
+  padding: 0.5em;
+  text-align: center;
+}
+
+header img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 1em;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p {
+  margin: 0;
+}
+
+section {
+  background-color: #F8F8F8;
+  max-width: 725px;
+  padding: 0.3em;
+  text-align: center;
+}
+
+.command {
+  color: #FFA400;
+  font-size: 1.5em;
+  font-weight: bold;
+}
