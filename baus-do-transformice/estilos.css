@@ -1,6 +1,6 @@
 html {
   font-size: 16px;
-  margin: 0 0 2em;
+  margin: 0 0 2em 0;
 }
 
 img {
@@ -21,10 +21,12 @@ table {
   border: 0;
   border-collapse: separate;
   border-spacing: 5px;
+  text-align: center !important;
+  vertical-align: middle !important;
   width: 100%;
 }
 
-td {
+tr td {
   padding: 5px;
   text-align: center !important;
   vertical-align: middle !important;
