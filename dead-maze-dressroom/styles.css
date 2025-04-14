@@ -1,0 +1,17 @@
+p {
+  margin: 0;
+}
+
+.container {
+  margin: 20px auto;
+  max-width: 910px;
+  text-align: center;
+}
+
+.dressroom-iframe {
+  border: none;
+  display: block;
+  height: 522px;
+  margin: 20px auto;
+  width: 928px;
+}
