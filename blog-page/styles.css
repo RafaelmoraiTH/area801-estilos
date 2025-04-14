@@ -1,0 +1,14 @@
+.center {
+  font-size: x-large;
+  text-align: center;
+}
+
+.content-image {
+  height: 360px;
+  width: 640px;
+}
+
+.image-container {
+  clear: both;
+  text-align: center;
+}
