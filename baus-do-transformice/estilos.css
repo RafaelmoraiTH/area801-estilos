@@ -26,12 +26,6 @@ table {
   width: 100%;
 }
 
-tr td {
-  padding: 5px;
-  text-align: center !important;
-  vertical-align: middle !important;
-}
-
 .grid-button {
   align-items: center;
   background-color: #212425;
