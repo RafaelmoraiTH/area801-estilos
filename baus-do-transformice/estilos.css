@@ -16,6 +16,10 @@ img.container {
   margin-bottom: 0.625rem;
 }
 
+p nav ul li {
+  margin: 0;
+}
+
 table {
   border: 0;
   border-collapse: separate;
