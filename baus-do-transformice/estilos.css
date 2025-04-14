@@ -17,14 +17,19 @@ img.container {
   margin-bottom: 0.625rem;
 }
 
-table tr td {
+table {
   border: 0;
   border-collapse: separate;
   border-spacing: 5px;
-  padding: 5px;
   text-align: center !important;
   vertical-align: middle !important;
   width: 100%;
+}
+
+tr td {
+  padding: 5px;
+  text-align: center !important;
+  vertical-align: middle !important;
 }
 
 .grid-button {
