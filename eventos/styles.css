@@ -1,0 +1,42 @@
+footer {
+  margin: 0.5em 0 0 0;
+}
+
+img {
+  display: inline;
+  vertical-align: middle;
+}
+
+img.block {
+  display: block;
+  margin: auto;
+}
+
+img.margin {
+  margin: 0.3em auto;
+}
+
+p, h3, h4, ul {
+  margin: 0.3em 0;
+}
+
+table {
+  border: 0;
+  border-collapse: separate;
+  border-spacing: 5px;
+  width: 100%;
+}
+
+td {
+  padding: 5px;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.center {
+  text-align: center;
+}
+
+.red {
+  color: #f00;
+}
