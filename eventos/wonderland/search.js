@@ -1,27 +1,34 @@
-function filtrarTribos(valorPesquisa) {
+function filtrarMateriais(valorPesquisa) {
+  filtrarTabela(valorPesquisa, "materiais");
+}
+
+function filtrarMissoes(valorPesquisa) {
+  filtrarTabela(valorPesquisa, "missoes");
+}
+
+function filtrarTabela(valorPesquisa, idSecao) {
   const termo = valorPesquisa.toLowerCase();
+  const tabela = document.querySelector(`#${idSecao} table tbody`);
 
-  const tabelas = [document.querySelector("#materiais table tbody"), document.querySelector("#missoes table tbody")].filter((t) => t !== null);
+  if (!tabela) return;
 
-  tabelas.forEach((tabela) => {
-    const linhas = tabela.querySelectorAll("tr");
+  const linhas = tabela.querySelectorAll("tr");
 
+  for (let i = 1; i < linhas.length; i++) {
+    const linha = linhas[i];
+    const primeiraCelula = linha.querySelector("td:first-child");
+    const textoCelula = primeiraCelula.textContent.toLowerCase();
+
+    if (textoCelula.includes(termo)) {
+      linha.style.display = "";
+    } else {
+      linha.style.display = "none";
+    }
+  }
+
+  if (termo === "") {
     for (let i = 1; i < linhas.length; i++) {
-      const linha = linhas[i];
-      const primeiraCelula = linha.querySelector("td:first-child");
-      const textoCelula = primeiraCelula.textContent.toLowerCase();
-
-      if (textoCelula.includes(termo)) {
-        linha.style.display = "";
-      } else {
-        linha.style.display = "none";
-      }
+      linhas[i].style.display = "";
     }
-
-    if (termo === "") {
-      for (let i = 1; i < linhas.length; i++) {
-        linhas[i].style.display = "";
-      }
-    }
-  });
+  }
 }
