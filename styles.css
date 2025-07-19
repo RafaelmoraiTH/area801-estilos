@@ -5,7 +5,7 @@ code {
 }
 
 footer {
-  margin: 0.75rem 0 0 0;
+  margin: 1rem 0 0 0;
   text-align: center;
 }
 
@@ -23,7 +23,7 @@ h4,
 h5,
 h6,
 ul {
-  margin: 0.75rem 0;
+  margin: 1rem 0;
 }
 
 table {
@@ -48,7 +48,7 @@ td {
 
 .divider {
   border-top: 1px solid #ccc;
-  margin: 1.25rem 0;
+  margin: 1.25rem 0.25rem;
 }
 
 .left {
@@ -59,7 +59,7 @@ td {
 }
 
 .margin {
-  margin: 0.75rem auto;
+  margin: 1rem auto;
 }
 
 .red {
