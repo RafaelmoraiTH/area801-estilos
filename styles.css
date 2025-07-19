@@ -1,0 +1,74 @@
+code {
+  background-color: #f4f4f4;
+  border-radius: 0.1875rem;
+  padding: 0.125rem 0.3125rem;
+}
+
+footer {
+  margin: 0.5rem 0 0 0;
+  text-align: center;
+}
+
+img {
+  display: inline;
+  margin: auto;
+  vertical-align: middle;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul {
+  margin: 0.5rem 0;
+}
+
+table {
+  border-collapse: separate;
+  border-spacing: 0.3125rem;
+  width: 100%;
+}
+
+td {
+  padding: 0.3125rem;
+  text-align: center !important;
+  vertical-align: middle !important;
+}
+
+.block {
+  display: block;
+}
+
+.center {
+  text-align: center;
+}
+
+.divider {
+  border-top: 1px solid #ccc;
+  margin: 1.25rem 0;
+}
+
+.left {
+  clear: left;
+  float: left;
+  margin-bottom: 1rem;
+  margin-right: 1rem;
+}
+
+.margin {
+  margin: 0.5rem auto;
+}
+
+.red {
+  color: #ff0000;
+}
+
+.right {
+  clear: right;
+  float: right;
+  margin-bottom: 1rem;
+  margin-left: 1rem;
+}
