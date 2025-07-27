@@ -1,5 +1,8 @@
-td img:not(:last-child) {
+td img {
   display: block;
+}
+
+td img:not(:last-child) {
   margin-bottom: 0.625rem;
 }
 
