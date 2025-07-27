@@ -1,32 +1,5 @@
-img {
-  display: block;
-  margin: auto;
-}
-
-img.center {
-  display: inline;
-  vertical-align: middle;
-}
-
-img.container {
+.container {
   margin-bottom: 0.625rem;
-}
-
-p {
-  margin: 0;
-}
-
-table {
-  border: 0;
-  border-collapse: separate;
-  border-spacing: 5px;
-  width: 100%;
-}
-
-td {
-  padding: 5px;
-  text-align: center !important;
-  vertical-align: middle !important;
 }
 
 .grid-button {
@@ -59,8 +32,4 @@ td {
   grid-template-columns: repeat(auto-fill, minmax(7.5rem, 1fr));
   list-style: none;
   padding: 0.625rem;
-}
-
-.margin {
-  margin-bottom: 1em;
 }
