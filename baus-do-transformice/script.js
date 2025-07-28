@@ -104,10 +104,16 @@ const medalhasPorBau = {
 
 function carregarMedalhas(idCelula, medalhas) {
   const celula = document.getElementById(idCelula);
-  medalhas.forEach((medalha) => {
-    const img = document.createElement("img");
-    img.src = medalha;
-    celula.appendChild(img);
+  if (!celula) return;
+
+  medalhas.forEach((item) => {
+    if (typeof item === "string" && !item.startsWith("http") && !item.startsWith("/")) {
+      celula.textContent = item;
+    } else if (item.startsWith("http") || item.startsWith("/")) {
+      const img = document.createElement("img");
+      img.src = item;
+      celula.appendChild(img);
+    }
   });
 }
 
