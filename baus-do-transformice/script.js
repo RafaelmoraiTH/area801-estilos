@@ -122,6 +122,50 @@ Object.keys(medalhasPorBau).forEach((bau) => {
   carregarMedalhas(idCelula, medalhasPorBau[bau]);
 });
 
+const esferasPorBau = {
+  global: ["Todos disponíveis abaixo."],
+  astrologico: [{ width: "84", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_38.webp" }],
+  epifania: [{ width: "63", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_5.webp" }, { width: "73", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_39.webp" }],
+  piloto: [{ width: "58", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_6.webp" }],
+  abraço: [{ width: "62", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_7.webp" }, { width: "58", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_85.webp" }],
+  marmota: [{ width: "61", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_8.webp" }],
+  dragao: [{ width: "70", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_9.webp" }, { width: "94", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_57.webp" }, { width: "69", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_80.webp" }],
+  namorados: [{ width: "67", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_10.webp" }, { width: "64", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_34.webp" }, { width: "86", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_40.webp" }, { width: "68", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_46.webp" }, { width: "76", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_72.webp" }],
+  carnaval: [{ width: "68", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_11.webp" }, { width: "66", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_64.webp" }],
+  chuva: [{ width: "67", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_12.webp" }, { width: "66", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_51.webp" }, { width: "63", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_73.webp" }, { width: "76", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_76.webp" }],
+  armagedom: [{ width: "71", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_13.webp" }, { width: "69", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_33.webp" }],
+  patricio: [{ width: "68", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_14.webp" }, { width: "80", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_41.webp" }, { width: "71", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_58.webp" }, { width: "61", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_81.webp" }],
+  cozinha: [{ width: "65", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_15.webp" }, { width: "69", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_74.webp" }, { width: "78", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_82.webp" }],
+  pascoa: [{ width: "89", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_42.webp" }, { width: "82", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_59.webp" }, { width: "66", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_66.webp" }, { width: "55", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_83.webp" }],
+  dino: [{ width: "65", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_20.webp" }],
+  pesca: [{ width: "64", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_24.webp" }, { width: "86", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_25.webp" }, { width: "68", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_29.webp" }, { width: "80", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_47.webp" }, { width: "76", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_53.webp" }, { width: "75", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_62.webp" }, { width: "65", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_68.webp" }, { width: "67", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_86.webp" }],
+  jardinagem: [{ width: "71", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_26.webp" }, { width: "72", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_52.webp" }, { width: "73", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_61.webp" }, { width: "65", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_67.webp" }, { width: "58", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_75.webp" }],
+  escola: [{ width: "71", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_27.webp" }, { width: "61", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_69.webp" }],
+  magia: [{ width: "72", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_30.webp" }, { width: "75", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_77.webp" }],
+  halloween: [{ width: "77", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_28.webp" }, { width: "74", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_31.webp" }, { width: "92", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_35.webp" }, { width: "90", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_36.webp" }, { width: "69", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_43.webp" }, { width: "96", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_49.webp" }, { width: "65", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_54.webp" }, { width: "61", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_63.webp" }, { width: "61", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_70.webp" }, { width: "72", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_78.webp" }],
+  natal: [{ width: "60", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_1.webp" }, { width: "55", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_2.webp" }, { width: "53", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_3.webp" }, { width: "60", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_4.webp" }, { width: "76", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_32.webp" }, { width: "89", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_37.webp" }, { width: "68", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_44.webp" }, { width: "82", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_45.webp" }, { width: "67", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_50.webp" }, { width: "60", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_55.webp" }, { width: "70", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_56.webp" }, { width: "62", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_65.webp" }, { width: "62", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_71.webp" }, { width: "64", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_79.webp" }],
+  normal: ["Não há."],
+};
+
+function carregarEsferas(idCelula, esferas) {
+  const celula = document.getElementById(idCelula);
+  if (typeof esferas[0] === "string") {
+    celula.textContent = esferas[0];
+  } else {
+    esferas.forEach((esfera) => {
+      const img = document.createElement("img");
+      img.width = esfera.width;
+      img.src = esfera.src;
+      celula.appendChild(img);
+    });
+  }
+}
+
+Object.keys(esferasPorBau).forEach((bau) => {
+  const idCelula = `esferas-${bau}`;
+  carregarEsferas(idCelula, esferasPorBau[bau]);
+});
+
 const titulosPorBau = {
   global: ["Todos disponíveis abaixo."],
   astrologico: ["«Queijólogo» | «Queijóloga» (377)"],
