@@ -54,8 +54,13 @@ td {
   margin: 0 auto 1rem auto;
 }
 
+.pink {
+  color: pink;
+  text-decoration: none;
+}
+
 .red {
-  color: #ff0000;
+  color: red;
 }
 
 .right {
