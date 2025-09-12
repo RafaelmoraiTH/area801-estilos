@@ -79,7 +79,7 @@ npcs.forEach((npc) => {
 
 const medalhasPorBau = {
   global: ["Todos disponíveis abaixo."],
-  astrologico: ["https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_69.webp"],
+  astrologico: ["https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_69.webp", "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_522.webp"],
   epifania: ["https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_71.webp"],
   piloto: ["https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_73.webp", "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_386.webp"],
   abraço: ["https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_129.webp", "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_272.webp", "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Medalha_510.webp"],
@@ -124,7 +124,7 @@ Object.keys(medalhasPorBau).forEach((bau) => {
 
 const esferasPorBau = {
   global: ["Todos disponíveis abaixo."],
-  astrologico: [{ width: "84", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_38.webp" }],
+  astrologico: [{ width: "84", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_38.webp" }, { width: "81", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_87.webp" }],
   epifania: [{ width: "63", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_5.webp" }, { width: "73", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_39.webp" }],
   piloto: [{ width: "58", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_6.webp" }],
   abraço: [{ width: "62", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_7.webp" }, { width: "58", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Esfera_85.webp" }],
@@ -168,7 +168,7 @@ Object.keys(esferasPorBau).forEach((bau) => {
 
 const titulosPorBau = {
   global: ["Todos disponíveis abaixo."],
-  astrologico: ["«Queijólogo» | «Queijóloga» (377)"],
+  astrologico: ["«Queijólogo» | «Queijóloga» (377)", "«Astrofromagic» (607)"],
   epifania: ["«Bolo de Reis» (378)", "«Frangipane» (416)"],
   piloto: ["«Piloto» | «Pilota» (379)", "«Infinito» (548)", "«Up» (549)"],
   abraço: ["«Abraços Grátis» (380)"],
