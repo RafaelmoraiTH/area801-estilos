@@ -54,11 +54,6 @@ td {
   margin: 0 auto 1rem auto;
 }
 
-.pink {
-  color: pink;
-  text-decoration: none;
-}
-
 .red {
   color: red;
 }
@@ -68,4 +63,11 @@ td {
   float: right;
   margin-bottom: 1rem;
   margin-left: 1rem;
+}
+
+#seletor {
+  display: block;
+  height: 355px;
+  text-align: center;
+  width: 100%;
 }
