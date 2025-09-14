@@ -166,6 +166,50 @@ Object.keys(esferasPorBau).forEach((bau) => {
   carregarEsferas(idCelula, esferasPorBau[bau]);
 });
 
+const itensPorBau = {
+  global: ["Todos disponíveis abaixo."],
+  astrologico: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_11092025.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20017.webp" }],
+  epifania: ["Não há."],
+  piloto: ["Não há."],
+  abraço: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_29052020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_05062025.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20015.webp" }],
+  marmota: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_18042024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20007.webp" }],
+  dragao: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_13022025.webp" }],
+  namorados: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_11022021.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_08022024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20006.webp" }],
+  carnaval: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_11112022.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_14032024.webp" }],
+  chuva: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_16052024.webp" }],
+  armagedom: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_21062024.webp" }],
+  patricio: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_13032020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_17032022.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_06032025.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20012.webp" }],
+  cozinha: ["Não há."],
+  pascoa: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_09042020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_10042025.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20013.webp" }],
+  dino: ["Não há."],
+  pesca: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_09072020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_23072021.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_29062023.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_04072025.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20002.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20016.webp" }],
+  jardinagem: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_21062019.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_27052021.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_14072022.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_18052023.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_04072024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20001.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20008.webp" }],
+  escola: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_10092020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_28092023.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20003.webp" }],
+  magia: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_19092024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20009.webp" }],
+  halloween: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_17102019.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_22102020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_21102021.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_13102022.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_20102023.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_24102024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20004.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20010.webp" }],
+  natal: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_13122019.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_17122020.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_17122021.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_161220221.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_161220222.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_14122023.webp" }, { width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_12122024.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_206.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_301.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_305.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_306.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20005.webp" }, { src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/imagens/Emoji_20011.webp" }],
+  normal: [{ width: "35", src: "https://cdn.jsdelivr.net/gh/rafaelmoraith/area801-estilos@main/eventos/Loja_25052025.webp" }],
+};
+
+function carregarItens(idCelula, itens) {
+  const celula = document.getElementById(idCelula);
+  if (typeof itens[0] === "string") {
+    celula.textContent = itens[0];
+  } else {
+    itens.forEach((item) => {
+      const img = document.createElement("img");
+      if (item.width) img.width = item.width;
+      img.src = item.src;
+      celula.appendChild(img);
+    });
+  }
+}
+
+Object.keys(itensPorBau).forEach((bau) => {
+  const idCelula = `itens-${bau}`;
+  carregarItens(idCelula, itensPorBau[bau]);
+});
+
 const titulosPorBau = {
   global: ["Todos disponíveis abaixo."],
   astrologico: ["«Queijólogo» | «Queijóloga» (377)", "«Astrofromagic» (607)"],
