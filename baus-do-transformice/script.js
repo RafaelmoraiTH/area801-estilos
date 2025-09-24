@@ -212,7 +212,7 @@ Object.keys(itensPorBau).forEach((bau) => {
 
 const titulosPorBau = {
   global: ["Todos disponíveis abaixo."],
-  astrologico: ["«Queijólogo» | «Queijóloga» (377)", "«Astrofromagic» (607)"],
+  astrologico: ["«Queijólogo» | «Queijóloga» (377)", "«Queijonauta» (607)"],
   epifania: ["«Bolo de Reis» (378)", "«Frangipane» (416)"],
   piloto: ["«Piloto» | «Pilota» (379)", "«Infinito» (548)", "«Up» (549)"],
   abraço: ["«Abraços Grátis» (380)"],
